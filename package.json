@@ -1,0 +1,30 @@
+{
+  "name": "meetuprob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "test": "npx buidler test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/buidler": "^1.4.7",
+    "dotenv": "^8.2.0",
+    "husky": "^4.3.0",
+    "solhint": "^3.2.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler-ethers": "^2.0.0",
+    "@nomiclabs/buidler-waffle": "^2.1.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.0",
+    "ethers": "^5.0.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  }
+}

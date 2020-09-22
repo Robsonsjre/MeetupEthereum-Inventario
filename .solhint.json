@@ -1,0 +1,14 @@
+{
+    "extends": "solhint:recommended",
+    "rules": {
+      "func-order": "error",
+      "func-param-name-mixedcase": "warn",
+      "modifier-name-mixedcase": "warn",
+      "private-vars-leading-underscore": "warn",
+      "max-line-length": ["warn", 150],
+      "reason-string": ["warn", {"maxLength": 50}],
+      "compiler-version": ["off","^0.5.8"],
+      "not-rely-on-time": "off"
+    }
+  }
+  
